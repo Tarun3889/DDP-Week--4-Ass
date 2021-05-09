@@ -1,0 +1,35 @@
+---
+title: "Aethelometer Dataset - Black Carbon Concentration in Air."
+author: "Tarun"
+date: "5/9/2021"
+output: slidy_presentation
+job: Reproducible Pitch Presentation
+subtitle: Aethalometer
+
+---
+## Coursera Reproducible Pitch
+
+
+## mtcars Dataset
+
+### Motor Trend Car Road Tests
+
+An Aethalometer is an instrument for measuring the concentration of optically absorbing (‘black’) suspended particulates in a gas colloid stream; commonly visualized as smoke or haze, often seen in ambient air under polluted conditions..
+### Source
+Dataset available here- https://data.europa.eu/data/datasets/jrc-abcis-ap-ebcae-2017?locale=en.
+
+```{r,echo=TRUE}
+data <- read.csv("Dec-2017.csv")
+
+```
+---
+
+## Aethalometer Dataset - Format
+
+**A data frame with 44504 observations on 68 variables.**
+The Aethalometer is an absolute measurement based on sample flow, spot size, and optical attenuation. The sample flow is checked annually (see Section 12.0). Elemental carbon concentration is measured in µg/m3. The detection range of the Aethalometer is 0.1 to ~ 100 µg/m3.
+
+```{r,echo=T}
+colnames(data)
+str(data)
+````
